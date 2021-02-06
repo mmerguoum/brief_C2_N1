@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root
+{
+
+    --dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white : hsl(0, 0%, 100%);
+    --margin-general:-5% 10%;
+
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    background: url("../images/bg-pattern-top-desktop.svg") no-repeat;  
+    margin: var(--margin-general);
+    
+}
+
+.main{
+
+    display: grid;
+    width:100%;
+    height:auto;
+    grid-template-columns: 1fr  ;
+    grid-template-rows: repeat(2,1fr);
+    
+    
+}
+ .introduction 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap:60px;
+    
+}
+/*left side*/
+ /* .container{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap:20px;
+    
+} */
+
+.bloc1{
+
+    height:auto;
+    display:inline-block;
+    margin-top: 170px;
+    margin-left: 75px;
+    margin-right:10px
+}
+
+.bloc2{  
+    margin-top: -228px;
+    margin-right: 85px;
+    font-size: 12px;
+    margin-bottom: 50px;
+    margin-left: 100%;
+    
+    
+}
+.title{
+    font-size: 35px;
+    color: var(--dark-magenta);
+    
+}
+.texte{
+    font-size: 12px;
+    color: var(--dark-grayish-magenta);
+   width: 68%;
+   margin-bottom: 4%;
+   margin-top: -3%;
+   
+   
+}
+
+/*left side*/
+
+/*right side*/
+.star1, .star2, .star3{
+    background-color:var(--light-grayish-magenta);
+    width: 370px;
+    height: 30px;
+    margin:10px;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-left: 40px;
+    color: var(--dark-magenta);
+    
+
+    
+}
+.star1{
+    position:relative;
+    right:30px;
+
+}
+.star3{
+    position:relative;
+    right:-30px;
+}
+p.par {
+    margin-top: -17px;
+    margin-left: 122px;
+}
+
+
+.container-cards{
+    display: flex;
+    margin:35px;
+    margin-top: 65px;
+    
+    
+}
+ .card1{
+    background-color: var(--dark-magenta);  
+    margin: 10px;
+    border-radius: 7px;
+    margin-left: 46px;
+    box-sizing: border-box;
+    
+    margin-bottom: 3%;
+    margin-top: -1%;
+}
+
+    
+
+.card2{
+    background-color: var(--dark-magenta);    
+    margin: 10px;
+    border-radius: 7px;
+}
+
+
+.card3{
+    background-color: var(--dark-magenta);
+    margin: 10px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    margin-bottom: -1%;
+    margin-top: 3%;
+}
+ 
+.commentaire{
+    font-size: 10px;
+    color: white;
+    margin: 10px;
+}
+
+.tof{
+    border-radius: 80px;  
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+}
+.info{
+    color: white;
+    margin-top: 40px;
+    font-size: 12px;
+    
+}
+.verif{
+    color: var(--soft-pink);
+    
+}
+.profil{
+    display: flex;
+  
+}
+
+
+@media screen and (max-width: 600px)
+
+{
+    .title {
+        text-align: center;
+        font-size: 55px;
+        width: 100%;
+    }
+    .texte {
+        font-size: 20px;
+        color: var(--dark-grayish-magenta);
+        width: 90%;
+        margin-bottom: 4%;
+        margin-top: -3%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .bloc1 {
+        height: auto;
+        display: block;
+        margin-top: 135px;
+        margin-left: 25px;
+        width: 100%;
+        text-align: right;
+    }
+    .star1 {
+        right: 25px;
+    }
+    .bloc2 {
+        margin-right: 85px;
+        font-size: 15px;
+        margin-bottom: 30px;
+        margin-left: 13%;
+        margin-top: 0%;
+    }
+    
+.star1{
+    right: 0px;
+}
+.star3{
+    right: 0px;
+}
+
+.star1, .star2, .star3 {
+    background-color: var(--light-grayish-magenta);
+    width: 370px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-left: 23px;
+    color: var(--dark-magenta);
+    text-align: center;
+}
+.container-cards {
+    display: table-row;
+}
+.card1 {
+    margin-left: 24%;
+    width: 47%;
+    padding: 8%;
+    margin-top: 48%;
+}
+.card2 {
+    margin-left: 24%;
+    width: 31%;
+    padding: 8% 8% 7% 8%;
+    margin-top: 5%;
+    margin-bottom: 40%;
+}
+.card3 {
+    margin: 149px;
+    margin-top: -190px;
+    height: 270px;
+    width: 47%;
+    margin-left: 24%;
+}
+
+section.cards {
+    margin-top: -75%;
+}
+p.par {
+    margin-top: 10px;
+    margin-left: -8px;
+}
+}
+
+    
