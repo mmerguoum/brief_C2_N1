@@ -1,0 +1,261 @@
+:root
+{
+
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+
+
+}
+body{
+    background: url(images/bg-desktop.png) no-repeat;
+    background-color: var(--Very-Dark-Blue);
+    background-position-y: 472px;
+}
+.bloc1{
+    background-color: var(--Dark-Blue);
+    width: 350px;
+    height: 191px;
+    margin-top: 382px;
+    margin-left: 280px;
+    border-radius: 10px 100px 10px 10px;
+}
+.logo img{
+    
+    margin-top: 35px;
+    margin-left: 42px;
+    width: 130px;
+   
+}
+.icones {
+    margin-left: 27px;
+    margin-top: 2%;
+    width: 100%;
+    padding: 6px;
+}
+
+.document{
+    background-color: var(--Very-Dark-Blue);
+    padding: 15px;
+    border-radius: 9px;
+    width: 25px;
+    margin-bottom: 16px;
+}
+.folder{
+    background-color: var(--Very-Dark-Blue); 
+    padding: 17px;
+    border-radius: 9px;
+    width: 30px;
+    margin: 8px;
+    margin-bottom: 16px;
+}
+.upload{
+    background-color: var(--Very-Dark-Blue);
+    padding: 16px;
+    border-radius: 9px;
+    width: 37px;
+    margin-bottom: 16px;
+}
+.bloc2{
+    background-color: var(--Dark-Blue);
+    width: 37%;
+    height: 149px;
+    border-radius: 10px;
+    margin-left: 670px;
+    margin-top: -160px;
+}
+
+p.GB {
+    margin-left: 39px;
+    position: relative;
+    top: 46px;
+    font-size: 11px;
+    color: white;
+}
+.progress {
+    background-color: var(--Very-Dark-Blue);
+    height: 12px;
+    width: 454px;
+    margin-left: 35px;
+    margin-top: 52px;
+    border-radius: 15px;
+}
+.color {
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 12px;
+    width: 350px;
+    margin-left: 1px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.cercle {
+    background-color: white;
+    width: 13px;
+    height: 13px;
+    border-radius: 20px;
+    margin-left: 336px;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-top: 35px solid white;
+    border-left: 35px solid transparent;
+    margin-left: 458px;
+    margin-top: -18px;
+}
+.number{
+    background-color: white;
+    height: 51px;
+    width: 113px;
+    border-radius: 10px;
+    margin-top: -153px;
+    margin-left: 380px;
+    position: relative;
+}
+.num{
+    margin-top: 1px;
+    position: absolute;
+    top: 14px;
+    left: 10px;
+}
+.par{
+    color: white;
+    margin-left: 40px;
+    margin-top: 4px;
+    font-size: 14px;
+}
+.par2{
+    color: white;
+    margin-left: 430px;
+    margin-top: -34px;
+}
+@media screen and (max-width: 600px)
+{
+body{
+    background-size: 160% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+.bloc1{
+    width: 308px;
+    height: 155px;
+    border-radius: -10px 179px 10px 10px;
+    margin-top: 75px;
+    margin-left: 30px;
+}
+.bloc2{
+    background-color: var(--Dark-Blue);
+    width: 305px;
+    height: 125px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 34px;
+}
+.number {
+    background-color: white;
+    height: 49px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+.color {
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 12px;
+    width: 180px;
+    margin-left: 1px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.par2 {
+    color: white;
+    margin-left: 224px;
+    margin-top: -24px;
+    font-size: 12px;
+}
+.progress {
+    background-color: var(--Very-Dark-Blue);
+    height: 12px;
+    width: 235px;
+    margin-left: 35px;
+    margin-top: 43px;
+    border-radius: 15px
+}
+.cercle {
+    background-color: white;
+    width: 13px;
+    height: 13px;
+    border-radius: 20px;
+    margin-left: 167px;
+}
+.triangle
+{
+
+}
+.logo img{
+        width: 100px;
+        height: 35px;
+        margin-top: 30px;
+        margin-left: 40px;
+}
+.document {
+    background-color: var(--Very-Dark-Blue);
+    padding: 12px;
+    border-radius: 9px;
+    width: 19px;
+    margin-bottom: 22px;
+}
+.folder {
+    background-color: var(--Very-Dark-Blue);
+    padding: 11px;
+    border-radius: 9px;
+    width: 28px;
+    margin: 8px;
+    margin-bottom: 23px;
+}
+.upload {
+    background-color: var(--Very-Dark-Blue);
+    padding: 10px;
+    border-radius: 9px;
+    width: 35px;
+    margin-bottom: 23px;
+}
+p.GB{
+    margin-left: 64px;
+    position: relative;
+    top: 35px;
+    font-size: 12px;
+    color: white;
+}
+.par{
+    font-size: 10px;
+}
+
+.num
+{
+    position: relative;
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+  .text_num
+ {
+    font-size: 2em;
+    position: absolute;
+    transform: translate(-76%, -47%);
+ }
+ .num_desc
+ {
+    color: gray;
+    font-size: 0.5em;
+    transform: translate(44%, -3px);
+
+ }
+
+}
