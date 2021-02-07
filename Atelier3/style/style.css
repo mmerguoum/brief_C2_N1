@@ -1,1 +1,227 @@
 /* CSS starter */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;1,500;1,600&display=swap');
+:root{
+--Moderate-violet: hsl(263, 55%, 52%);
+--Very-dark-grayish-blue: hsl(217, 19%, 35%);
+--Very-dark-blackish-blue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(0, 0%, 81%);
+--Light-grayish-blue: hsl(210, 46%, 95%);
+--white-white:  hsl(210, 46%, 95%)
+}
+*{ 
+    padding: 0px;
+    margin: 0.2rem;
+   
+}
+body{
+    background-color: var(--white-white);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    width:100%;
+   
+}
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4,20%);
+        grid-template-rows: repeat(2, 33%);
+        gap: 20px;
+        grid-template-areas:"BOX1 BOX1 BOX2 BOX5"
+                            "BOX3 BOX4 BOX4 BOX5";    
+    }
+    
+    /*BOX1*/
+    
+    .BOX1{        
+        grid-template-areas : BOX1;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background-color: var(--Moderate-violet);
+        border-radius: 8px; 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* align-items: center; */
+        /* align-content: stretch; */
+    }
+    .profil{
+        position: relative;
+    }
+    .profil .profil-img{
+        position: absolute;
+        left: 1%;
+        top: 14%;
+    }
+    /* .verif{
+        font-size: 10px;
+        color: var(--Light-grayish-blue);
+    }*/
+    .profil-daniel{
+        position: absolute;
+        left: 11%;
+        bottom: -60Px;
+    }
+    .verif{
+        font-size: 12px;
+    }
+    .com1{
+        position: absolute;
+        top: 10%;
+        left: 4%;
+        font-size: 16px;
+        color: var(--White);
+    }
+    .com2{
+        position: absolute;
+        width: 33%;
+        top: 20%;
+        left: 4%;
+        font-size: 13px;
+        color: var(--Light-gray);  
+    }
+    .name{
+        font-size: 14px;
+        color: var(--White);
+    }
+    .verif{
+     color: var(--Light-gray);   
+    }
+    
+    
+    
+    /*BOX2*/
+    
+    .BOX2{
+        background-color: var(--Very-dark-grayish-blue);
+        grid-area: BOX2;
+        grid-column: 3/4;
+        border-radius: 8px; 
+    }
+    .profil-jonathan{
+        position: absolute;
+        top: 11px;
+        left: 22%;
+    }
+    .com3{
+        position: absolute;
+        width: 13%;
+        top: 10%;
+        left: 46%;
+        font-size: 16px;
+        color:var(--White);
+    }
+    .com4{
+        position: absolute;
+        top: 20%;
+        width: 13%;
+        left: 46%;
+        font-size: 13px;
+        color: var(--Light-gray);
+    }
+    
+    
+    /*BOX3*/
+    
+    .BOX3{
+        background-color: var(--White);
+        border-radius: 8px;    
+        grid-area: BOX3;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    /*.com5{
+        font-size:13px ;
+        position: relative;
+        width: 42%;
+        left: 12%;
+        color: var(--Very-dark-grayish-blue);
+    }
+    .com6{
+        font-size: 12px;
+        position: absolute;
+        top: 167%;
+        left: 10%;
+        right: 23%;
+        color:var(--Light-gray);
+    }
+    
+    .text-card3{
+        position: relative;
+        width: 116%;
+    }
+    
+    /*BOX4*/
+    
+    /*.BOX4{
+        background-color: var(--Very-dark-blackish-blue);
+        border-radius: 8px;
+        grid-area: BOX4; 
+        grid-row: 2/3;  
+    }
+    .com7{
+        position: relative;
+        width: 75%;
+        left: 7%;
+        font-size: 12px;
+        color:var(--white-white);
+    }
+    .com8{
+        color: var(--Light-gray);
+        position: relative;
+        left: 7%;
+        width: 81%;
+        font-size: 13px;
+        top: 27px;
+    }
+    .profil-patrick{
+        position: absolute;
+        left: 36%;
+        top: 38%;
+    }
+    
+    /*BOX5*/
+    
+   /* .BOX5{
+        background-color: var(--White);
+        border-radius: 8px;
+        grid-area: BOX5;
+        
+    }
+    .profil-kira{
+        position: absolute;
+        top: 50px;
+        left: 76%;
+    }
+    .nom-kira{
+        font-size: 14px;
+        color: var(--Very-dark-grayish-blue);
+    }
+    .verif-kira{
+        font-size: 10px;
+        color: var(--Light-gray);
+    }
+    .com9{
+        position: relative;
+        top: 44%;
+        left: 13%;
+        width: 68%;
+        margin-top: 6px;
+        color: var(--Very-dark-grayish-blue);
+    }
+    .text{
+        position: relative;
+        top: -38px;
+        left: 41px;
+        width: 75%;
+        font-size: 12px;
+        margin-top: 22%;
+    
+    }*/
+    img{
+        border-radius: 50%;
+        margin: 20px;
+        width: 25px;    
+    }   
+
+
+
