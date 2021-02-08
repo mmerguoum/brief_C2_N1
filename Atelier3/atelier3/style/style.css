@@ -1,0 +1,236 @@
+/* CSS starter */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;1,500;1,600&display=swap');
+:root{
+--Moderate-violet: hsl(263, 55%, 52%);
+--Very-dark-grayish-blue: hsl(217, 19%, 35%);
+--Very-dark-blackish-blue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(0, 0%, 81%);
+--Light-grayish-blue: hsl(210, 46%, 95%);
+--white-white:  hsl(210, 46%, 95%)
+}
+
+
+*{ 
+    padding: 0;
+    margin: 10px;
+   
+}
+body{
+    background-color: var(--white-white);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    width:100%;
+    
+    font-size: 15px;
+   
+}
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4*auto-fit, minmax(200px, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        grid-template-areas:"BOX1 BOX1 BOX2 BOX5"
+                            "BOX3 BOX4 BOX4 BOX5";    
+    }
+
+    
+    img{
+    margin:20px 0;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    
+    }
+    
+    /*BOX1*/
+    .BOX1{        
+        grid-template-areas : BOX1;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background-color: var(--Moderate-violet);
+        border-radius: 8px; 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 21% 80%;
+        grid-gap: 0;
+    }
+
+    .profil
+    {
+    grid-column: 1/3;
+    grid-row: 1/2;
+     display: flex;
+	flex-direction: row; 
+
+    }
+
+ .text-card1
+    { 
+       grid-column: 1/3;
+       grid-row: 2/3;
+       display: flex;
+	flex-direction: column;
+	justify-content: center;
+    }
+
+ .profil-daniel
+    {
+     
+        grid-row: 2/4;
+    grid-column: 1/2;
+    font-size: 13px;
+    position: absolute;
+    text-align: left;
+    top: 8%;
+    left: 7%;
+    padding: 0;
+    margin: 0;
+    }
+
+    .name
+    {
+        height: 0;
+        font-size: 16px;
+        line-height: 1px;
+        color:var(--Light-gray)
+    }
+
+    .verif
+    {
+    
+   
+    height: auto;
+    font-size: 0.9em;
+    color: var(--Light-grayish-blue);
+}
+
+.com1{
+    text-align: left;
+    color: var(--White);
+}
+.com2{
+    color:var(--Light-gray);
+
+    
+}
+    
+
+    
+    .BOX2{
+        background-color: var(--Very-dark-grayish-blue);
+        grid-area: BOX2;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        border-radius: 8px; 
+        
+
+    }
+    .com3{
+        color: var(--White);
+        position: absolute;
+        width: 137px;
+        top: -34%;
+        left: 6%;
+
+    }
+    .com4{
+        color:var(--Light-gray);
+        color: var(--Light-gray);
+        position: relative;
+        top: 60px;
+    }
+
+    
+    .text-card2{
+        position: relative;
+    }
+
+    
+    .BOX3{
+        background-color: var(--White);
+        border-radius: 8px;    
+        grid-area: BOX3;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .com5{
+        color: var(--Very-dark-grayish-blue);
+        position: absolute;
+        top: 57%;
+        width: 10%;
+        left: 5%;
+    }
+    .com6{
+        color:var(--Light-gray);
+        color: var(--Light-gray);
+        position: relative;
+        top: 62px;
+    }
+    .profil-jeanette {
+        position: absolute;
+        left: 6%;
+        top: 49%;
+        line-height: 0.5;
+        font-size: 10px;
+    }
+
+    
+    .BOX4
+    {   
+        background-color: var(--Very-dark-blackish-blue);
+        grid-area: BOX4;
+        border-radius: 8px; 
+    }
+    .com7{
+        color:var(--White);
+    }
+    .com8{
+        color:var(--Light-gray);   
+    }
+   
+    .BOX5{
+        grid-area: BOX5;
+        background-color: var(--White);
+        border-radius: 8px; 
+    
+    }
+    .text-card5{
+        line-height: 2;
+    }
+    .profil-kira{
+        position: relative;
+        left: -2%;
+    }
+    .nom-kira{
+        color:var(--Very-dark-grayish-blue);
+    }
+    .verif-kira{
+
+        color: var(--Light-gray);
+        position: absolute;
+        color: var(--Light-gray);
+        font-size: 14px;
+        top: 23px;
+        width: 101%;
+    }
+    .com9{
+        position: absolute;
+        top: 16%;
+        font-size: 15px;
+        width: 14%;
+        left: 75%;
+        color: var(--Very-dark-grayish-blue);
+    }
+    .text{
+        color: var(--Light-gray);
+        position: relative;
+        top: 92px;
+        width: 75%;
+        left: 9%;
+        font-size: 14px;
+    }
+   @media (max-width:375px){
+       .container{
+           display: flex;
+       }
+   }
